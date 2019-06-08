@@ -1,4 +1,5 @@
-# NBTExplorer
+# [NBTExplorer](https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-tools/1262665-nbtexplorer-nbt-editor-for-windows-and-mac)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Build status](https://ci.appveyor.com/api/projects/status/vivh2bt7gkd2wg14/branch/2.x?svg=true)](https://ci.appveyor.com/project/LordNyriox/nbtexplorer/branch/2.x)
 
 NBTExplorer is an open-source NBT editor for all common sources of NBT data.  It's mainly intended for editing [Minecraft](http://www.minecraft.net) game data.
 
@@ -7,7 +8,7 @@ NBTExplorer is an open-source NBT editor for all common sources of NBT data.  It
 NBTExplorer supports reading and writing the following formats:
 
 * Standard NBT files (e.g. level.dat)
-* Schematic files
+* Schematic files (*.schem)
 * Uncompressed NBT files (e.g. idcounts.dat)
 * Minecraft region files (*.mcr)
 * Minecraft anvil files (*.mca)
@@ -17,7 +18,7 @@ NBTExplorer supports reading and writing the following formats:
 
 ### Windows
 
-Windows XP or later, .NET Framework 2.0 or later.
+Windows XP or later, .NET Framework 4.0 or later.
 
 ### Linux
 
