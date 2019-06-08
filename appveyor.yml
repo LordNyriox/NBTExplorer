@@ -1,0 +1,27 @@
+version: 8.0.{build}
+image: Visual Studio 2017
+
+
+platform:
+    - Win32
+
+configuration:
+    - Release
+    - Debug
+
+install:
+    - if "%platform%"=="Win32" set archi=x86
+
+    - call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" %archi%
+
+
+build_script:
+    - cd "%APPVEYOR_BUILD_FOLDER%"\
+    - msbuild NBTExplorer.sln /p:configuration="%configuration%" /p:platform="%platform%" /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
+
+artifacts:
+    - path: \**\*.dll
+    - path: \**\*.exe
+    - path: \**\*.config
+    - path: \**\*.xml
+    - path: \**\*.msi
